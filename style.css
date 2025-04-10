@@ -1,0 +1,25 @@
+{
+}
+body{
+    background: url(images/benjamin-voros-uUdHAer6Dmw-unsplash-medium.jpg) no-repeat center center fixed;
+    margin: 1%;
+    padding: 1%;
+
+}
+p, h4 {
+    color: #2d4963;
+}
+h2  {
+    color: #263c53;
+}
+/* Original color - #2d4963 (Blue) */
+
+/* 5% darker #263c53 */
+
+/* 10% darker #23394d */
+
+/* 15% darker #1e2f46 */
+
+/* 30% darker #17283a */
+
+/* 50% darker #0f1d27 */
