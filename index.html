@@ -9,14 +9,21 @@
   <!-- Font Awesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
+    html, body {
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      width: 100%; /* Ensure width does not exceed the viewport */
+      height: 100%; /* Ensure height takes up the full viewport */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    * {
+      box-sizing: border-box; /* Ensure padding and border don't affect the element's width */
+    }
     /* Custom CSS for hover color change */
       .link-hover:hover {
         color: #007bff !important; /* Change this color as needed */
       }
-    body {
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-      box-sizing: border-box; /* Ensure padding and borders are included in width/height */
-    }
     .business-dark-blue {
       color: #003366;
     }
@@ -79,12 +86,8 @@
           <i class="fab fa-instagram" style="font-size: 22px;"></i>
         Instagram</span>
       </a>
-
-      <br>
-      <div></div>
-      <br>
       <!-- Appointment Link -->
-      <div class="d-flex justify-content-center align-items-center" style="width: 135px">
+      <div class="d-flex justify-content-center align-items-center mt-5" style="width: 135px">
         <a id="zl-url" class="zl-url text-decoration-none text-dark fw-bold link-hover business-dark-blue"
            href="https://www.znanylekarz.pl/justyna-woszczyna-mienko/psycholog/czeladz2" target="_blank" rel="nofollow"
            data-zlw-doctor="justyna-woszczyna-mienko" data-zlw-type="button_calendar_medium"
@@ -116,18 +119,20 @@
 
 <div class="row featurette align-items-center">
   <div class="col-md-7 business-dark-blue">
-    <h2 class="featurette-heading fw-normal lh-1 ms-4 ">O mnie: <span class="text-body-secondary">kim jestem i jak mogę Ci pomóc?</span></h2>
+    <h2 class="featurette-heading fw-normal lh-1 ms-4">O mnie: <span class="text-body-secondary">kim jestem i jak mogę Ci pomóc?</span></h2>
     <p class="lead ms-4">Nazywam się <b>Justyna Woszczyna-Mieńko</b> i jestem psychologiem.
       <br>Aktualnie pracuję prywatnie w gabinecie w Czeladzi oraz w Centrum Zdrowia Psychicznego w Tarnowskich Górach, gdzie poszerzam swoją wiedzę o przypadki kliniczne, a także pracuję indywidualnie w ramach poradni.
       <br>W swojej pracy kładę nacisk na indywidualne podejście do pacjenta oraz atmosferę zaufania i bezpieczeństwa.
       <br>Jeśli masz problemy z samooceną, obniżonym nastrojem, lękiem, miewasz myśli samobójcze lub doświadczyłeś przykrych sytuacji, które rzutują na Twoje funkcjonowanie to <b>serdecznie Cię zapraszam.</b>
       <br>Zapraszam również, jeśli po prostu potrzebujesz osoby, która Cię wysłucha w atmosferze akceptacji i stworzy dla Ciebie bezpieczną przestrzeń na przeżywanie swoich emocji.</p>
   </div>
-  <div class="col-md-1">  </div>
-  <div class="col-md-3 ms-5">
-    <img src="images/profilowe.jpeg" class="img-fluid" alt="Responsive image" style=" border-radius: 50%; height: 375px; width: 375px; object-fit: cover;">
+
+  <div class="col-12 col-md-4 d-flex justify-content-center align-items-center" style="padding: 0;">
+    <img src="images/profilowe.jpeg" class="img-fluid" alt="Responsive image"
+         style="border-radius: 50%; width: 100%; max-width: 375px; height: auto; object-fit: cover;">
   </div>
 </div>
+
 
 <hr class="featurette-divider">
 
@@ -264,10 +269,6 @@
       <i class="fab fa-instagram" style="font-size: 24px;"></i> Instagram
     </a>
   </div>
-
-
-
-
 </footer>
 
 </body>
