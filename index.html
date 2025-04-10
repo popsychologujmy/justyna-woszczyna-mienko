@@ -5,86 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Popsychologujmy - JWM</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for hover color change */
+      .link-hover:hover {
+        color: #007bff !important; /* Change this color as needed */
+      }
+    body {
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+    }
+    .business-dark-blue {
+      color: #003366;
+    }
+  </style>
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
-<div class="row">
-  <div class="col-lg-4">
-    <div style="position: relative; width: 140px; height: 140px;">
-      <!-- Circle SVG as background -->
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-      </svg>
-
-      <!-- Image inside the circle, round and fitting inside the SVG -->
-      <img src="images/logo-ptak.png" alt="Logo" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; transform: translate(-50%, -50%);">
-    </div>
+<div class="row row-bg-wrapper" style="background: url('images/baner-mały-prawo-bez.png') no-repeat center center; background-size: 100% auto">
 
 
-    <h4 class="fw-normal"><b>Popsychologujmy</b></h4>
-    <p>Razem ze mną zadbaj o siebie!</p>
+  <div class="col-lg-1"></div> <!-- empty for sizing -->
+  <div class="business-dark-blue col-lg-6 d-flex flex-column align-items-center mt-5 ml-5">
+    <h1 class="fw-normal mt-4 display-1 text-nowrap"><b>Popsychologujmy</b></h1>
+    <h5 class="display-5 text-nowrap">Razem ze mną zadbaj o siebie!</h5>
   </div><!-- /.col-lg-4 -->
-  <!--
-  <div class="col-lg-4">
-    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-    <h2 class="fw-normal">Heading</h2>
-    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-  </div>  --><!-- /.col-lg-4 -->
+  <div class="col-lg-3"></div> <!-- empty for sizing -->
 
-  <div class="col-lg-6"></div> <!-- empty for sizing -->
+  <div class="col-lg-2 col-md-3 col-sm-4"> <!-- LINKS -->
+    <div class="col-lg-3 col-md-4 col-sm-6 mx-auto d-flex flex-column align-items-center gap-3" style="font-size: 20px;">
 
-  <div class="col-lg-2">
-    <div style="display: flex; flex-direction: column; gap: 10px; font-family: 'Poppins', sans-serif; font-size: 18px; color: #2d4963;">
+      <!-- Znany Lekarz Link -->
       <a href="https://www.znanylekarz.pl/justyna-woszczyna-mienko" target="_blank" rel="noopener noreferrer"
-         style="text-decoration: none; color: #2d4963; font-weight: 600;"
-         onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-        Znany Lekarz
+         class="text-decoration-none text-dark fw-bold link-hover text-nowrap"
+         data-bs-toggle="tooltip" data-bs-placement="top" title="Znany Lekarz">
+        <span class="business-dark-blue link-hover">Znany Lekarz</span>
       </a>
 
+
+      <!-- Twój Psycholog Link -->
       <a href="https://twojpsycholog.pl/profil-psychologa/justyna-woszczyna-mienko-6790" target="_blank" rel="noopener noreferrer"
-         style="text-decoration: none; color: #2d4963; font-weight: 600;"
-         onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-        Twój Psycholog
+         class="text-decoration-none text-dark fw-bold link-hover text-nowrap"
+         data-bs-toggle="tooltip" data-bs-placement="top" title="Twój Psycholog">
+        <span class="business-dark-blue link-hover">Twój Psycholog</span>
       </a>
 
+      <!-- LinkedIn Link with Icon -->
       <a href="https://www.linkedin.com/in/justyna-woszczyna-mieńko" target="_blank" rel="noopener noreferrer"
-         style="text-decoration: none; color: #2d4963; display: flex; align-items: center; gap: 8px; font-weight: 600;"
-         onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="24" height="24">
-        LinkedIn
+         class="text-decoration-none text-dark fw-bold d-flex align-items-center gap-2 link-hover text-nowrap"
+         data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+        <span class="business-dark-blue link-hover">
+          <i class="fab fa-linkedin" style="font-size: 22px;"></i>
+        LinkedIn</span>
       </a>
 
+      <!-- Facebook Link with Icon -->
       <a href="https://www.facebook.com/JustynaWoszczynaMienkoPoradnictwoPsychologiczne" target="_blank" rel="noopener noreferrer"
-         style="text-decoration: none; color: #2d4963; display: flex; align-items: center; gap: 8px; font-weight: 600;"
-         onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="24" height="24">
-        Facebook
+         class="text-decoration-none text-dark fw-bold d-flex align-items-center gap-2 link-hover text-nowrap"
+         data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+        <span class="business-dark-blue link-hover">
+          <i class="fab fa-facebook-f" style="font-size: 22px;"></i>
+        Facebook</span>
       </a>
 
+      <!-- Instagram Link with Icon -->
       <a href="https://www.instagram.com/popsychologujmy/" target="_blank" rel="noopener noreferrer"
-         style="text-decoration: none; color: #2d4963; display: flex; align-items: center; gap: 8px; font-weight: 600;"
-         onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24" height="24">
-        Instagram
+         class="text-decoration-none text-dark fw-bold d-flex align-items-center gap-2 link-hover text-nowrap"
+         data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+        <span class="business-dark-blue link-hover">
+          <i class="fab fa-instagram" style="font-size: 22px;"></i>
+        Instagram</span>
       </a>
 
       <br>
       <div></div>
       <br>
-      <div style="text-decoration: none; color: #2d4963; display: flex; align-items: center; gap: 8px; font-weight: 600; width: 24">
-        <!-- Adjusted div to match the style of the previous links, looks like text, works as a button -->
-        <a id="zl-url" class="zl-url" href="https://www.znanylekarz.pl/justyna-woszczyna-mienko/psycholog/czeladz2"
-           target="_blank" rel="nofollow"
+      <!-- Appointment Link -->
+      <div class="d-flex justify-content-center align-items-center" style="width: 135px">
+        <a id="zl-url" class="zl-url text-decoration-none text-dark fw-bold link-hover business-dark-blue"
+           href="https://www.znanylekarz.pl/justyna-woszczyna-mienko/psycholog/czeladz2" target="_blank" rel="nofollow"
            data-zlw-doctor="justyna-woszczyna-mienko" data-zlw-type="button_calendar_medium"
            data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true"
-           data-zlw-a11y-title="Widget umówienia wizyty lekarskiej"
-           style="text-decoration: none; color: #2d4963; font-weight: 600; display: flex; align-items: center; gap: 8px;"
-           onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-          Umów wizytę
+           data-zlw-a11y-title="Widget umówienia wizyty lekarskiej">
+          Umów wizytę test
         </a>
         <script>
           !function($_x,_s,id){
@@ -101,40 +107,39 @@
 
     </div>
 
+  </div>
+  </div><!-- /.col-lg-2 -->
 
-  </div><!-- /.col-lg-4 -->
-</div><!-- /.row -->
-
-
-<!-- START THE FEATURETTES -->
+    </div><!-- /row -->
 
 <hr class="featurette-divider">
 
-<div class="row featurette">
-  <div class="col-md-7">
-    <h2 class="featurette-heading fw-normal lh-1">O mnie: <span class="text-body-secondary">kim jestem i jak mogę Ci pomóc?</span></h2>
-    <p class="lead">Nazywam się Justyna Woszczyna-Mieńko, jestem psychologiem. Aktualnie pracuję prywatnie w gabinecie w Czeladzi oraz w Centrum Zdrowia Psychicznego w Tarnowskich Górach, gdzie poszerzam swoją wiedzę o przypadki kliniczne, a także pracuję indywidualnie w ramach poradni.
-    <br>W swojej pracy kładę nacisk na indywidualne podejście do pacjenta oraz atmosferę zaufania i bezpieczeństwa.
+<div class="row featurette align-items-center">
+  <div class="col-md-7 business-dark-blue">
+    <h2 class="featurette-heading fw-normal lh-1 ms-4 ">O mnie: <span class="text-body-secondary">kim jestem i jak mogę Ci pomóc?</span></h2>
+    <p class="lead ms-4">Nazywam się <b>Justyna Woszczyna-Mieńko</b> i jestem psychologiem.
+      <br>Aktualnie pracuję prywatnie w gabinecie w Czeladzi oraz w Centrum Zdrowia Psychicznego w Tarnowskich Górach, gdzie poszerzam swoją wiedzę o przypadki kliniczne, a także pracuję indywidualnie w ramach poradni.
+      <br>W swojej pracy kładę nacisk na indywidualne podejście do pacjenta oraz atmosferę zaufania i bezpieczeństwa.
       <br>Jeśli masz problemy z samooceną, obniżonym nastrojem, lękiem, miewasz myśli samobójcze lub doświadczyłeś przykrych sytuacji, które rzutują na Twoje funkcjonowanie to <b>serdecznie Cię zapraszam.</b>
       <br>Zapraszam również, jeśli po prostu potrzebujesz osoby, która Cię wysłucha w atmosferze akceptacji i stworzy dla Ciebie bezpieczną przestrzeń na przeżywanie swoich emocji.</p>
   </div>
   <div class="col-md-1">  </div>
-  <div class="col-md-4">
+  <div class="col-md-3 ms-5">
     <img src="images/profilowe.jpeg" class="img-fluid" alt="Responsive image" style=" border-radius: 50%; height: 375px; width: 375px; object-fit: cover;">
   </div>
 </div>
 
 <hr class="featurette-divider">
 
-<div class="row featurette">
+<div class="row featurette align-items-center business-dark-blue">
   <div class="col-md-7 order-md-2">
-    <h2 class="featurette-heading fw-normal lh-1">Doświadczenie: <span class="text-body-secondary"></span></h2>
-    <p class="lead">Tytuł magistra psychologii zdobyłam w 2021 roku na Akademii Ignatianum w Krakowie.
+    <h2 class="featurette-heading fw-normal lh-1 ms-4">Doświadczenie: <span class="text-body-secondary">praktyka za którą stoi nauka i edukacja.</span></h2>
+    <p class="lead ms-4">Tytuł magistra psychologii zdobyłam w 2021 roku na Akademii Ignatianum w Krakowie.
       <br>Podczas studiów realizowałam roczny kurs przygotowujący do pracy w oparciu o metody terapii poznawczo-behawioralnej.
       <br>Stale podnoszę swoje kwalifikacje oraz uczęszczam na szkolenia.
 
-      <br>Odbyłam pierwszy stopień certyfikowanego szkolenia terapii traumy EMDR, co pozwala mi na pracę z traumą prostą za pomocą tej metody.
-      <br>Zrealizowałam certyfikowane szkolenie z zakresu diagnozy i opiniowania MMPI-2, co umożliwia mi pracę diagnostyczną przy użyciu tego narzędzia.
+      <br>Odbyłam pierwszy stopień certyfikowanego szkolenia terapii traumy <b>EMDR</b>, co pozwala mi na pracę z traumą prostą za pomocą tej metody.
+      <br>Zrealizowałam certyfikowane szkolenie z zakresu diagnozy i opiniowania <b>MMPI-2</b>, co umożliwia mi pracę diagnostyczną przy użyciu tego narzędzia.
       <br>Posiadam certyfikat z podstaw pracy z zaburzeniami lękowymi oparty na nurcie CBT (poznawczo-behawioralnym).
       <br>Ukończyłam również certyfikowane szkolenia z profilaktyki uzależnień behawioralnych oraz wpływu lęku, stresu i traumy na życie oraz zachowanie.
 
@@ -147,22 +152,27 @@
       <br>Udzielałam także wsparcia psychologicznego oraz nadzorowałam rodziców starających się o odzyskanie praw rodzicielskich do dzieci.
       <br>Przez pół roku wolontaryjnie działałam w Sieci Przyjaciół Zdrowia Psychicznego, gdzie moje działania miały głównie charakter psychoedukacyjny i pomocowy.</p>
   </div>
-  <div class="col-md-5 order-md-1">
+  <div class="col-md-4 order-md-1 ms-4">
     <img src="images/gabinet.jpg" class="img-fluid" alt="Responsive image" style="height: 90%; width: 90%; object-fit: contain;">
   </div>
 </div>
 
 <hr class="featurette-divider">
 
-<div class="row featurette">
+<div class="row featurette align-items-center business-dark-blue">
   <div class="col-md-7">
-    <h2 class="featurette-heading fw-normal lh-1">Co dalej? <span class="text-body-secondary">Zapraszam do kontaktu :)</span></h2>
-    <p class="lead">Wizytę możesz umówić bezpośrednio korzystając z przycisku obok z platformy ZnanyLekarz.pl.
-      <br> Przyjmuję stacjonarnie w gabinecie jak i online w zależności od preferencji pacjenta.
-      <br> Jeśli masz pytania, to chętnie na nie odpowiem - moje dane kontaktowe znajdziesz na dole strony.
+    <h2 class="featurette-heading fw-normal lh-1 ms-4">Co dalej? <span class="text-body-secondary">Zapraszam do kontaktu :)</span></h2>
+    <p class="lead ms-4 business-dark-blue"> Przyjmuję stacjonarnie w gabinecie jak i online w zależności od preferencji pacjenta.
+      <br> Jeśli masz pytania, to chętnie na nie odpowiem - moje dane kontaktowe znajdziesz poniżej, na dole strony.
+      <br> Wizytę możesz umówić bezpośrednio korzystając z przycisku obok (ZnanyLekarz.pl).
+      <br> Znajdziesz tam również opinie pacjentów, którym miałam przyjemność pomóc.
+    <blockquote class="blockquote text-center mt-5">
+      <p class="mb-1">„Twoje myśli nie muszą być prawdą.<br>Masz moc, by je zmieniać.”</p>
+      <footer class="blockquote-footer mt-1">David D. Burns, The Feeling Good Handbook (1980)</footer>
+    </blockquote>
     </p>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-5 mt-4">
     <div  id="widget-zl" >
       <a id="zl-url" class="zl-url" href="https://www.znanylekarz.pl/justyna-woszczyna-mienko" rel="nofollow" data-zlw-doctor="justyna-woszczyna-mienko" data-zlw-type="big" data-zlw-opinion="true" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="Widget umówienia wizyty lekarskiej">Justyna Woszczyna-Mieńko - ZnanyLekarz.pl</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
     </div>
@@ -171,53 +181,94 @@
 
 <hr class="featurette-divider">
 
-<!-- /END THE FEATURETTES -->
+<!-- Footer -->
+<footer class="container-fluid p-0" style="background: url('images/baner-mały-lewo.png') no-repeat center center; background-size: cover;">
+  <div class="text-center py-3  align-items-center" style="color: #2d4963; font-weight: 600;">
+      <div class="row justify-content-center">
+        <!-- Phone Number -->
+        <div class="col-12 mb-3 text-center">
+          <a href="tel:+48536571468" class="d-inline-block text-decoration-none text-dark fw-bold link-hover">
+            <span class="business-dark-blue link-hover">
+              <i class="fas fa-phone-alt" style="margin-right: 8px;"></i>
+              +48 536 571 468
+            </span>
+          </a>
+        </div>
 
-<head>
-  <!-- Font Awesome CDN -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-</head>
+        <!-- Address -->
+        <div class="col-12 mb-3 text-center">
+          <a href="https://www.google.com/maps/search/Rynek+18+m4,+Czeladź" target="_blank" class="d-inline-block text-decoration-none text-dark fw-bold link-hover">
+            <span class="business-dark-blue link-hover"><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
+            <br>Rynek 18/4
+            <br>Czeladź 41-250
+            </span>
+          </a>
+        </div>
 
-<!-- Footer Section -->
-<footer class="container py-4">
-  <div class="text-center" style="color: #2d4963; font-weight: 600;">
-    <!-- Phone number with Icon -->
-    <div class="mb-3">
-      <a href="tel:+48536571468" class="d-block" style="color: #2d4963; font-weight: 600; text-decoration: none;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-        <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> +48 536 571 468
-      </a>
+        <!-- Email -->
+        <div class="col-12 mb-3 text-center">
+          <a href="mailto:woszczynajustyna97@gmail.com" class="d-inline-block text-decoration-none text-dark fw-bold link-hover">
+            <span class="business-dark-blue link-hover">
+              <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+              woszczynajustyna97@gmail.com
+            </span>
+          </a>
+        </div>
+
+        <!-- Legal Information -->
+        <div class="col-12 text-center">
+          <p class="mb-1 text-muted">2025 © Justyna Woszczyna-Mieńko Poradnictwo Psychologiczne</p>
+          <p class="mb-1 text-muted">NIP: 5130280029</p>
+          <p class="mb-1 text-muted">REGON: 522709852</p>
+        </div>
+
+        <!-- Scroll to Top Link -->
+        <div class="col-12 text-center mt-4 align-items-center">
+          <a href="#" class="text-decoration-none text-dark fw-bold link-hover">
+            <span class="business-dark-blue link-hover">↑ Powrót na górę ↑</span>
+          </a>
+        </div>
+      </div>
     </div>
+  <div class="d-flex flex-column flex-sm-row justify-content-sm-end align-items-center gap-4 mt-3 mb-3 me-3">
+    <!-- Znany Lekarz Link -->
+    <a href="https://www.znanylekarz.pl/justyna-woszczyna-mienko" target="_blank" rel="noopener noreferrer"
+       class="text-decoration-none text-muted fw-bold link-hover text-nowrap"
+       data-bs-toggle="tooltip" data-bs-placement="top" title="Znany Lekarz">Znany Lekarz
+    </a>
 
-    <!-- Address with Icon -->
-    <div class="mb-3">
-      <a href="https://www.google.com/maps/search/Rynek+18+m4,+Czeladź" target="_blank" rel="noopener noreferrer" title="Open address in Google Maps" class="d-block" style="color: #2d4963; font-weight: 600; text-decoration: none;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-        <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
-        <div>Rynek 18/4</div>
-        <div>Czeladź 41-250</div>
-      </a>
-    </div>
+    <!-- Twój Psycholog Link -->
+    <a href="https://twojpsycholog.pl/profil-psychologa/justyna-woszczyna-mienko-6790" target="_blank" rel="noopener noreferrer"
+       class="text-decoration-none text-muted fw-bold link-hover text-nowrap"
+       data-bs-toggle="tooltip" data-bs-placement="top" title="Twój Psycholog">Twój Psycholog
+    </a>
 
-    <!-- Email with Icon -->
-    <div class="mb-3">
-      <a href="mailto:woszczynajustyna97@gmail.com" class="d-block" style="color: #2d4963; font-weight: 600; text-decoration: none;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'">
-        <i class="fas fa-envelope" style="margin-right: 8px;"></i> woszczynajustyna97@gmail.com
-      </a>
-    </div>
+    <!-- LinkedIn Link with Icon -->
+    <a href="https://www.linkedin.com/in/justyna-woszczyna-mieńko" target="_blank" rel="noopener noreferrer"
+       class="text-decoration-none text-muted fw-bold d-flex align-items-center gap-2 link-hover text-nowrap"
+       data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+      <i class="fab fa-linkedin" style="font-size: 24px;"></i> LinkedIn
+    </a>
 
-    <!-- Copyright and Business Info -->
-    <p class="mb-1" style="color: #6c757d; font-weight: 500;">2025 © Justyna Woszczyna-Mieńko Poradnictwo Psychologiczne</p>
-    <p class="mb-1" style="color: #6c757d; font-weight: 500;">NIP: 5130280029</p>
-    <p class="mb-1" style="color: #6c757d; font-weight: 500;">REGON: 522709852</p>
+    <!-- Facebook Link with Icon -->
+    <a href="https://www.facebook.com/JustynaWoszczynaMienkoPoradnictwoPsychologiczne" target="_blank" rel="noopener noreferrer"
+       class="text-decoration-none text-muted fw-bold d-flex align-items-center gap-2 link-hover text-nowrap"
+       data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+      <i class="fab fa-facebook-f" style="font-size: 24px;"></i> Facebook
+    </a>
 
-    <!-- Back to top link -->
-    <br>  <a href="#" style="color: #2d4963; font-weight: 600; text-decoration: none;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#2d4963'"> - Na górę - </a>
-
+    <!-- Instagram Link with Icon -->
+    <a href="https://www.instagram.com/popsychologujmy/" target="_blank" rel="noopener noreferrer"
+       class="text-decoration-none text-muted fw-bold d-flex align-items-center gap-2 link-hover text-nowrap"
+       data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+      <i class="fab fa-instagram" style="font-size: 24px;"></i> Instagram
+    </a>
   </div>
+
+
+
+
 </footer>
 
-
-
-
-</div><!-- /.container -->
 </body>
 </html>
