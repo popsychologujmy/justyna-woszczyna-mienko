@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /admin/
 Allow: / 
+Sitemap: https://popsychologujmy.github.io/justyna-woszczyna-mienko/sitemap.xml
